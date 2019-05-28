@@ -27,3 +27,4 @@ C:\Users\47918607805\Documents\DesenvolvimentoWeb\Hmaburgueria MVC\obj\Debug\net
 C:\Users\47918607805\Documents\DesenvolvimentoWeb\Hmaburgueria MVC\obj\Debug\netcoreapp2.1\Hmaburgueria MVC.dll
 C:\Users\47918607805\Documents\DesenvolvimentoWeb\Hmaburgueria MVC\obj\Debug\netcoreapp2.1\Hmaburgueria MVC.pdb
 C:\Users\47918607805\Documents\DesenvolvimentoWeb\Hmaburgueria MVC\obj\Debug\netcoreapp2.1\Hmaburgueria MVC.csproj.CopyComplete
+C:\Users\47918607805\Documents\DesenvolvimentoWeb\Hmaburgueria MVC\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Sucesso.g.cshtml.cs

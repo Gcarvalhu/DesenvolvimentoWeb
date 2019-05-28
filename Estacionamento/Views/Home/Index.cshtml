@@ -1,0 +1,37 @@
+@{
+Layout = "_Layout";
+}
+<header>
+    @{
+    Html.RenderPartial("_HeaderNavBar");
+    }
+</header>
+<main>
+    <h2>Bem vindo ao estacionamento da empresa Agora vai!Conhecido como Tsukar!</h2>
+    <br>
+    <br>
+    <h3>Agora faça o cadastro de entrada:</h3>
+    <form id="aaa">
+        <div class="form-group">
+            <label  class ="Nome" for="exampleInputEmail1">Nome do condutor</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nome">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Modelo do carro:</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Ex:Gol,fox,etc.">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Marca do carro</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ex:Ford,Volkswagem,etc.">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Placa</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="xxx-xxxx">
+        </div>
+        <div class="form-group">
+            <label for="dataHora">Data e horário de entrada</label>
+            <input type="date" class="form-control" required id="inputHorarioEntrada" placeholder="Insira a data">
+        </div>
+        <button id="botao" type="submit" class="btn btn-primary">Pronto</button>
+    </form> 
+</main>
