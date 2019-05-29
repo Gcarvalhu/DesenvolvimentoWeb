@@ -48,7 +48,7 @@ namespace Estacionamento
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=VeiculoController}/{action=Index}/{id?}");
             });
         }
     }
