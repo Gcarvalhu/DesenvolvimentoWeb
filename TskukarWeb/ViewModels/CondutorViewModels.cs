@@ -6,5 +6,7 @@ namespace TskukarWeb.ViewModels
     public class CondutorViewModels
     {
         public List<MarcaModel> marcas {get;set;}
+
+        public List<ModeloModel> modelos {get;set;}
     }
 }

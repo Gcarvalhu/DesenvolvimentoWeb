@@ -20,12 +20,10 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlSelect1">Modelo:</label>
+     @foreach( var item in Model.modelos){
+       <option value="@item.Nome">@item.Nome</option>
+     }
     <select class="form-control" id="exampleFormControlSelect1">
-      <option>Cruze</option>
-      <option>Gol</option>
-      <option>Pajero</option>
-      <option>Sandero</option>
-      <option>Corolla</option>
     </select>
   </div>
    <div class="form-group">
