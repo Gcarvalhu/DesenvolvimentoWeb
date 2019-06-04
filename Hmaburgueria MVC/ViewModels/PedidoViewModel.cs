@@ -7,5 +7,6 @@ namespace Documents.DesenvolvimentoWeb.Models
     {
         public List<Hamburguer> Hamburgueres {get;set;}
         public List<Shake> Shakes {get;set;}
+        public Cliente Cliente {get;set;}
     }
 }

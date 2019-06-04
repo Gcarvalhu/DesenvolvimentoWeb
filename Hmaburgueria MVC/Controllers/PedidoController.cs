@@ -1,13 +1,17 @@
 using Documents.DesenvolvimentoWeb.Models;
+using Hamburgueria.Repositories;
 using Hmaburgueria_MVC.Models;
 using Hmaburgueria_MVC.Repositorio;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Hmaburgueria_MVC.Controllers {
+namespace Hmaburgueria_MVC.Controllers
+{
     public class PedidoController : Controller {
-        
-        private PedidoRepositorio Repositorio = new PedidoRepositorio();
+        private const string SESSION_EMAIL = "_EMAIL";
+        private const string SESSION_CLIENTE = "_CLIENTE";
+        private ClienteRepository clienteRepository = new ClienteRepository();
+        private PedidoRepository Repositorio = new PedidoRepository();
 
         private HamburguerRepositorio hamburguerRepositorio = new HamburguerRepositorio();
 
@@ -18,10 +22,14 @@ namespace Hmaburgueria_MVC.Controllers {
 
             var hamburgueres = hamburguerRepositorio.Listar();
             var shakes = shakeRepositorio.Listar();
+            var cliente = clienteRepository.ObterPor(HttpContext.Session.GetString(SESSION_EMAIL));
+            clienteRepository.ObterPor(HttpContext.Session.GetString(SESSION_EMAIL));
 
             PedidoViewModel pedido = new PedidoViewModel();
             pedido.Hamburgueres = hamburgueres;
             pedido.Shakes = shakes;
+
+            pedido.Cliente = cliente == null ? new Cliente() : cliente;
 
             return View (pedido);
         }

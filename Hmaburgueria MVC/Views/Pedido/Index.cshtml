@@ -1,4 +1,4 @@
-@model Documents.DesenvolvimentoWeb.Models.PedidoViewModel
+
 <header>
     @{
         Html.RenderPartial("_HeaderNavBar");
@@ -10,25 +10,25 @@
             <div>
                 <label for="nome">Nome Completo</label>
                 <br />
-                <input id="nome" type="text" maxlength="20" minlength="3" name="nome" />
+                <input id="nome" type="text" maxlength="20" minlength="3" name="nome"  value="@Model.CLiente.nome"/>
             </div>
 
             <div>
                 <label for="endereco">Endereço</label>
                 <br />
-                <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" />
+                <input id="endereco" type="text" maxlength="20" minlength="3" name="endereco" value="@Model.CLiente.Endereço" />
             </div>
 
             <div>
                 <label for="telefone">Telefone para contato</label>
                 <br />
-                <input id="telefone" type="text" name="telefone"/>
+                <input id="telefone" type="text" name="telefone" value="@Model.CLiente.Telefone"/>
             </div>
 
             <div>
                 <label for="email">E-mail</label>
                 <br />
-                <input id="email" type="email" name="email" />
+                <input id="email" type="email" name="email" value="@Model.CLiente.Email"/>
             </div>
 
             <div class="double-field">
